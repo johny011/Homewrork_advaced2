@@ -1,0 +1,45 @@
+﻿body {
+    background-image: url("patrick-tomasso-lZbRV_a4Yxg-unsplash.jpg");
+    background-color:white;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: 100% 100%;
+    
+}
+.gr{
+    border-color:white;
+    color:white;
+    position:center;
+    
+    
+}
+.panel{
+    margin-top:15px;
+    background-color:rgb(0,0,0,0.5);
+    
+    width:400px;
+    
+    
+}
+.head{
+    color:white;
+}
+
+.txt{
+    height: 20px;
+    margin-top: 10px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background-color: rgb(0,0,0,0);
+    border-color: white;
+    margin-bottom: 10px;
+}
+
+.btnadd {
+    background-color: rgb(20,120,200);
+    height: 25px;
+    width: 100px;
+    color: white;
+    border:none;
+}
