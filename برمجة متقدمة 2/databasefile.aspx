@@ -18,7 +18,7 @@
                 <asp:TextBox ID="txt_Name" runat="server" placeholder="Name" CssClass="txt"></asp:TextBox><br />
                 <asp:TextBox ID="txt_Year" runat="server" placeholder="Year" CssClass="txt"></asp:TextBox><br />
                 <asp:TextBox ID="txt_Age" runat="server" placeholder="Age" CssClass="txt"></asp:TextBox><br />
-                <asp:Button ID="btn_Add" runat="server" Text="Add" CssClass="btnadd" OnClick="Add_Click" ></asp:Button>
+                <asp:Button ID="btn_Add" runat="server" Text="Add" CssClass="btnadd" OnClick="Add_Click" AutoPostBack="False" ></asp:Button>
                 <br />
             </asp:Panel>
           
@@ -28,7 +28,7 @@
                 <asp:TextBox ID="txt_edit_Name" runat="server" placeholder="Name" CssClass="txt"></asp:TextBox><br />
                 <asp:TextBox ID="txt_edit_Year" runat="server" placeholder="Year" CssClass="txt"></asp:TextBox><br />
                 <asp:TextBox ID="txt_edit_Age" runat="server" placeholder="Age" CssClass="txt"></asp:TextBox><br />
-                <asp:Button ID="btn_Edit" runat="server" Text="Edit" CssClass="btnadd" OnClick="btn_Edit_Click" ></asp:Button>
+                <asp:Button ID="btn_Edit" runat="server" Text="Edit" CssClass="btnadd" OnClick="btn_Edit_Click" OnLoad="btn_Edit_Load" ></asp:Button>
                 <br />
           </asp:Panel><br />
           <asp:Panel ID="Panel4" runat="server" CssClass="panel">
@@ -36,7 +36,7 @@
                 <asp:Label ID="Label4" runat="server" Text="ID" CssClass="head" ></asp:Label> 
           <asp:DropDownList ID="DropDownList1" runat="server"></asp:DropDownList>
               <br />
-               <asp:Button ID="btn_delete" runat="server" Text="Delete" CssClass="btnadd" OnClick="btn_delete_Click" ></asp:Button>
+               <asp:Button ID="btn_delete" runat="server" Text="Delete" CssClass="btnadd" OnClick="btn_delete_Click" AutoPostBack="False" ></asp:Button>
               </asp:Panel>
             </center>
         

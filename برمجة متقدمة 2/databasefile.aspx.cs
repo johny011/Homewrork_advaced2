@@ -33,6 +33,7 @@ namespace برمجة_متقدمة_2
 
         protected void Add_Click(object sender, EventArgs e)
         {
+            
             if (txt_Age.Text != "" && txt_Id.Text != "" && txt_Name.Text != "" && txt_Year.Text != "")
             {
                 try
@@ -54,9 +55,9 @@ namespace برمجة_متقدمة_2
                 {
                     Response.Write("<script>alert('" + ex.Message + "')</script>");
                 }
-
-            }
-            Response.Write("<script>alert('hello world')</script>");
+                    Response.Write("<script>alert('hello world')</script>");
+                }
+            
         }
 
         protected void SqlDataSource1_Selecting(object sender, SqlDataSourceSelectingEventArgs e)
@@ -84,13 +85,15 @@ namespace برمجة_متقدمة_2
 
         protected void btn_delete_Click(object sender, EventArgs e)
         {
-            int I = int.Parse(DropDownList1.SelectedValue.ToString());
-            var query = eF.Students.First(s => s.Id == I);
-            eF.Students.Remove(query);
-            eF.SaveChanges();
+            if (!Page.IsPostBack)
+            {
+                int I = int.Parse(DropDownList1.SelectedValue.ToString());
+                var query = eF.Students.First(s => s.Id == I);
+                eF.Students.Remove(query);
+                eF.SaveChanges();
+            }
         }
 
-        
-        
+       
     }
 }
